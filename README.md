@@ -39,6 +39,9 @@ The following API endpoints are available for interacting with the backend:
     DELETE /blockings/{blockingId} - Cancel a booking.
     PUT /blockings/{blockingId} - Rebook a booking with updated details.
 
+# Swagger UI for updating blocks
+    Once backend starts running, go to url http://localhost:8080/swagger-ui/ for accessing swagger UI for complete APIs
+
 # Data Storage
 
 The backend uses an in-memory database for storing bookings and blocks. This means that the data will not persist between server restarts.
