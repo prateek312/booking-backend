@@ -1,0 +1,270 @@
+{
+	"info": {
+		"_postman_id": "d9b69f92-0729-4bf6-bfad-5d7a4221dbb2",
+		"name": "Hostfully-backend-postman-collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28177419"
+	},
+	"item": [
+		{
+			"name": "Add a booking",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"startDate\": \"2023-06-13\",\n    \"endDate\": \"2023-06-20\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/bookings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bookings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add a blocking",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"startDate\": \"2023-06-13\",\n    \"endDate\": \"2023-06-20\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/bookings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bookings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all bookings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/bookings/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bookings",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all blockings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/bookings/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bookings",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a booking by Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/bookings/1687665589248",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bookings",
+						"1687665589248"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a blocking by Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/bookings/1687665589248",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bookings",
+						"1687665589248"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a booking",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/bookings/1687664696951",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bookings",
+						"1687664696951"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a blocking",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/bookings/1687664696951",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bookings",
+						"1687664696951"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rebook a blocking",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1687652773776,\n    \"startDate\": \"2023-06-28\",\n    \"endDate\": \"2023-06-29\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/bookings/1687652773776/rebook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bookings",
+						"1687652773776",
+						"rebook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rebook a booking",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1687652773776,\n    \"startDate\": \"2023-06-28\",\n    \"endDate\": \"2023-06-29\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/bookings/1687652773776/rebook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bookings",
+						"1687652773776",
+						"rebook"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
