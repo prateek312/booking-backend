@@ -1,7 +1,5 @@
 package com.hostfully.application.model;
 
-import org.springframework.cglib.core.Block;
-
 import java.time.LocalDate;
 
 public class Blocking {

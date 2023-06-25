@@ -2,11 +2,14 @@ package com.hostfully.application.controller;
 
 import com.hostfully.application.model.Booking;
 import com.hostfully.application.service.BookingService;
+import io.swagger.annotations.SwaggerDefinition;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import java.util.List;
 
+@EnableSwagger2
 @RestController
 @RequestMapping("/bookings")
 public class BookingController {
