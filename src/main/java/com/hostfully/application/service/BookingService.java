@@ -23,7 +23,7 @@ public class BookingService {
         booking.setId(bookingId);
 
         if (isIntervalOverlapping(booking)) {
-            throw new OverlappingIntervalException("The booking interval is overlapping with an existing booking.");
+            throw new OverlappingIntervalException("The booking interval is overlapping with an existing booking or blocked dates.");
         }
 
         bookings.put(bookingId, booking);
@@ -68,6 +68,9 @@ public class BookingService {
     }
 
     public Booking rebookBooking(Long bookingId, Booking booking) {
+        if (isIntervalOverlapping(booking)) {
+            throw new OverlappingIntervalException("The booking interval is overlapping with an existing booking or blocked dates.");
+        }
         bookings.put(bookingId, booking);
         return booking;
     }
